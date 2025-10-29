@@ -1,0 +1,5 @@
+Category,Metric,Value,Details
+Missing Values,patient_sat_score,6699,72.69% missing
+Missing Values,department_referral,5400,58.59% missing
+Duplicates,Duplicate Records,0,0.00% of total
+Overall Quality,Quality Score,100,0 issues found

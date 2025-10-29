@@ -40,15 +40,7 @@ ENV/
 .ipynb_checkpoints
 
 # Reports and Logs (generated files)
-Reports/*.csv
-Reports/*.xlsx
-Reports/*.json
-Reports/*.pdf
-Logs/*.log
-Logs/*.txt
-Visualizations/*.png
-Visualizations/*.jpg
-Visualizations/*.svg
+
 
 # Database files
 *.db

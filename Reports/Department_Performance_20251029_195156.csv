@@ -1,0 +1,8 @@
+department_referral,Patient_Count,Avg_Wait_Time,Min_Wait_Time,Max_Wait_Time,Avg_Satisfaction,Admissions
+Cardiology,248,35.35,10,60,5.14,0
+Gastroenterology,178,35.83,10,60,5.8,0
+General Practice,1840,34.91,10,60,5.06,0
+Neurology,193,36.8,10,60,5.28,0
+Orthopedics,995,34.98,10,60,4.86,0
+Physiotherapy,276,36.57,10,60,4.99,0
+Renal,86,34.7,10,60,4.57,0

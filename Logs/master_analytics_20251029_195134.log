@@ -1,0 +1,31 @@
+2025-10-29 19:51:36,264 - INFO - ================================================================================
+2025-10-29 19:51:36,265 - INFO - HEALTHCARE ANALYTICS DATABASE SETUP
+2025-10-29 19:51:36,265 - INFO - ================================================================================
+2025-10-29 19:51:36,265 - INFO - 
+Loading data from: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Dataset\HEALTHCARE PATIENT DATSET.csv
+2025-10-29 19:51:36,290 - INFO - Loaded 9,216 records with 11 columns
+2025-10-29 19:51:36,290 - INFO - 
+Dataset Columns:
+2025-10-29 19:51:36,291 - INFO -   - git push -u origin maindate: object (0 nulls)
+2025-10-29 19:51:36,292 - INFO -   - patient_id: object (0 nulls)
+2025-10-29 19:51:36,292 - INFO -   - patient_gender: object (0 nulls)
+2025-10-29 19:51:36,293 - INFO -   - patient_age: int64 (0 nulls)
+2025-10-29 19:51:36,293 - INFO -   - patient_sat_score: float64 (6699 nulls)
+2025-10-29 19:51:36,293 - INFO -   - Full Name : object (0 nulls)
+2025-10-29 19:51:36,294 - INFO -   - patient_race: object (0 nulls)
+2025-10-29 19:51:36,294 - INFO -   - patient_admin_flag: bool (0 nulls)
+2025-10-29 19:51:36,294 - INFO -   - patient_waittime: int64 (0 nulls)
+2025-10-29 19:51:36,295 - INFO -   - department_referral: object (5400 nulls)
+2025-10-29 19:51:36,296 - INFO -   - Moment: object (0 nulls)
+2025-10-29 19:51:36,296 - INFO - 
+Creating database: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\healthcare_analytics.db
+2025-10-29 19:51:36,297 - INFO - Loading data to 'healthcare_patients' table...
+2025-10-29 19:51:36,353 - INFO - 
+Creating database indexes...
+2025-10-29 19:51:36,353 - ERROR - Error setting up database: no such column: date
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Scripts\setup_database.py", line 73, in setup_database
+    cursor.execute(idx_query)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+sqlite3.OperationalError: no such column: date
+2025-10-29 19:51:36,355 - ERROR - Cannot proceed without database setup. Exiting...

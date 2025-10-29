@@ -1,0 +1,8 @@
+2025-10-29 19:50:32,742 - ERROR - Error in database setup: No module named 'pandas'
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Scripts\run_all_analytics.py", line 49, in run_database_setup
+    from setup_database import setup_database
+  File "C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Scripts\setup_database.py", line 10, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+2025-10-29 19:50:32,747 - ERROR - Cannot proceed without database setup. Exiting...

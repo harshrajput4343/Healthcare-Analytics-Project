@@ -1,0 +1,104 @@
+2025-10-29 19:51:54,479 - INFO - ================================================================================
+2025-10-29 19:51:54,479 - INFO - HEALTHCARE ANALYTICS DATABASE SETUP
+2025-10-29 19:51:54,479 - INFO - ================================================================================
+2025-10-29 19:51:54,480 - INFO - 
+Loading data from: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Dataset\HEALTHCARE PATIENT DATSET.csv
+2025-10-29 19:51:54,505 - INFO - Loaded 9,216 records with 11 columns
+2025-10-29 19:51:54,505 - INFO - 
+Dataset Columns:
+2025-10-29 19:51:54,507 - INFO -   - date: object (0 nulls)
+2025-10-29 19:51:54,508 - INFO -   - patient_id: object (0 nulls)
+2025-10-29 19:51:54,508 - INFO -   - patient_gender: object (0 nulls)
+2025-10-29 19:51:54,508 - INFO -   - patient_age: int64 (0 nulls)
+2025-10-29 19:51:54,509 - INFO -   - patient_sat_score: float64 (6699 nulls)
+2025-10-29 19:51:54,509 - INFO -   - Full Name : object (0 nulls)
+2025-10-29 19:51:54,510 - INFO -   - patient_race: object (0 nulls)
+2025-10-29 19:51:54,510 - INFO -   - patient_admin_flag: bool (0 nulls)
+2025-10-29 19:51:54,510 - INFO -   - patient_waittime: int64 (0 nulls)
+2025-10-29 19:51:54,511 - INFO -   - department_referral: object (5400 nulls)
+2025-10-29 19:51:54,512 - INFO -   - Moment: object (0 nulls)
+2025-10-29 19:51:54,512 - INFO - 
+Creating database: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\healthcare_analytics.db
+2025-10-29 19:51:54,513 - INFO - Loading data to 'healthcare_patients' table...
+2025-10-29 19:51:54,545 - INFO - 
+Creating database indexes...
+2025-10-29 19:51:54,579 - INFO - 
+Sample data from database:
+2025-10-29 19:51:54,582 - INFO - 
+================================================================================
+2025-10-29 19:51:54,582 - INFO - DATABASE SUMMARY STATISTICS
+2025-10-29 19:51:54,582 - INFO - ================================================================================
+2025-10-29 19:51:54,591 - INFO - 
+================================================================================
+2025-10-29 19:51:54,592 - INFO - DATABASE SETUP COMPLETED SUCCESSFULLY!
+2025-10-29 19:51:54,592 - INFO - ================================================================================
+2025-10-29 19:51:54,592 - INFO - 
+Database location: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\healthcare_analytics.db
+2025-10-29 19:51:54,592 - INFO - You can now run SQL queries using:
+2025-10-29 19:51:54,592 - INFO -   - SQLite CLI: sqlite3 healthcare_analytics.db
+2025-10-29 19:51:54,592 - INFO -   - Python: See README.md for examples
+2025-10-29 19:51:54,592 - INFO -   - SQL files: SQL_Queries/healthcare_analytics_queries.sql
+2025-10-29 19:51:54,593 - INFO - ================================================================================
+
+2025-10-29 19:51:55,740 - INFO - Starting comprehensive data quality validation...
+2025-10-29 19:51:55,753 - INFO - Loaded dataset: 9216 records, 11 columns
+2025-10-29 19:51:55,754 - INFO - Running comprehensive data quality validation...
+2025-10-29 19:51:55,754 - INFO - Performing completeness checks...
+2025-10-29 19:51:55,762 - INFO - Completeness score: 88.07%
+2025-10-29 19:51:55,762 - INFO - Performing uniqueness checks...
+2025-10-29 19:51:55,770 - INFO - Performing validity checks...
+2025-10-29 19:51:55,777 - INFO - Performing consistency checks...
+2025-10-29 19:51:55,780 - INFO - Performing accuracy and outlier checks...
+2025-10-29 19:51:55,787 - INFO - Overall Data Quality Score: 97.56%
+2025-10-29 19:51:55,789 - INFO - JSON report saved to C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Reports\Data_Quality_Validation_20251029_195155.json
+2025-10-29 19:51:56,109 - INFO - Excel report saved to C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Reports\Data_Quality_Report_20251029_195155.xlsx
+2025-10-29 19:51:56,110 - INFO - Text report saved to C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Logs\Data_Quality_Summary_20251029_195155.txt
+2025-10-29 19:51:56,134 - INFO - ================================================================================
+2025-10-29 19:51:56,134 - INFO - STARTING WEEKLY PERFORMANCE REPORT GENERATION
+2025-10-29 19:51:56,134 - INFO - ================================================================================
+2025-10-29 19:51:56,134 - INFO - Loading dataset from C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Dataset\HEALTHCARE PATIENT DATSET.csv...
+2025-10-29 19:51:56,148 - INFO - Dataset loaded successfully: 9216 records
+2025-10-29 19:51:56,148 - INFO - 
+================================================================================
+2025-10-29 19:51:56,148 - INFO - PERFORMING DATA QUALITY CHECKS
+2025-10-29 19:51:56,148 - INFO - ================================================================================
+2025-10-29 19:51:56,149 - INFO - Generating comprehensive quality report...
+2025-10-29 19:51:56,149 - INFO - Checking for missing values...
+2025-10-29 19:51:56,152 - INFO - Checking for duplicate records...
+2025-10-29 19:51:56,154 - INFO - Checking for outliers...
+2025-10-29 19:51:56,156 - INFO - Checking data consistency...
+2025-10-29 19:51:56,158 - WARNING - Found 24 records with invalid gender values
+2025-10-29 19:51:56,161 - INFO - Quality report saved to C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Reports\Data_Quality_Report_20251029_195156.csv
+2025-10-29 19:51:56,161 - INFO - No data quality issues detected!
+2025-10-29 19:51:56,161 - INFO - 
+================================================================================
+2025-10-29 19:51:56,161 - INFO - GENERATING PERFORMANCE REPORTS
+2025-10-29 19:51:56,162 - INFO - ================================================================================
+2025-10-29 19:51:56,164 - INFO - Generating comprehensive performance report...
+2025-10-29 19:51:56,164 - INFO - Generating weekly summary...
+2025-10-29 19:51:56,166 - INFO - Generating department performance metrics...
+2025-10-29 19:51:56,172 - INFO - Generating age group analysis...
+2025-10-29 19:51:56,176 - INFO - Generating daily trends...
+2025-10-29 19:51:56,321 - INFO - Performance report saved to C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Reports\Weekly_Performance_Report_20251029_195156.xlsx
+2025-10-29 19:51:56,326 - INFO - Loading data from C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Dataset\HEALTHCARE PATIENT DATSET.csv to database...
+2025-10-29 19:51:56,374 - INFO - Data loaded successfully to database
+2025-10-29 19:51:56,375 - INFO - 
+================================================================================
+2025-10-29 19:51:56,375 - INFO - WEEKLY REPORT GENERATION COMPLETED SUCCESSFULLY
+2025-10-29 19:51:56,375 - INFO - ================================================================================
+2025-10-29 19:51:56,375 - INFO - Reports saved to: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Reports
+2025-10-29 19:51:56,375 - INFO - Logs saved to: C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Logs
+2025-10-29 19:51:59,643 - ERROR - Unexpected error: 'charmap' codec can't encode character '\U0001f4c1' in position 128: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Scripts\run_all_analytics.py", line 255, in <module>
+    success = main()
+  File "C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Scripts\run_all_analytics.py", line 241, in main
+    generate_summary_report()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ASUS\OneDrive\Desktop\HEALTH DATA ANALYTICS\Scripts\run_all_analytics.py", line 177, in generate_summary_report
+    f.write(summary)
+    ~~~~~~~^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c1' in position 128: character maps to <undefined>

@@ -1,0 +1,244 @@
+{
+  "completeness": {
+    "total_records": 9216,
+    "total_columns": 11,
+    "missing_by_column": {
+      "date": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": true
+      },
+      "patient_id": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": true
+      },
+      "patient_gender": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": false
+      },
+      "patient_age": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": true
+      },
+      "patient_sat_score": {
+        "count": 6699,
+        "percentage": 72.69,
+        "is_critical": false
+      },
+      "Full Name ": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": false
+      },
+      "patient_race": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": false
+      },
+      "patient_admin_flag": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": false
+      },
+      "patient_waittime": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": true
+      },
+      "department_referral": {
+        "count": 5400,
+        "percentage": 58.59,
+        "is_critical": false
+      },
+      "Moment": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_critical": false
+      }
+    },
+    "missing_by_record": {
+      "records_with_missing": 8139,
+      "percentage": 88.31
+    },
+    "completeness_score": 88.07
+  },
+  "uniqueness": {
+    "duplicate_records": {
+      "exact_duplicates": {
+        "count": 0,
+        "percentage": 0.0
+      },
+      "id_date_duplicates": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    },
+    "unique_constraints": {
+      "patient_id": {
+        "unique_values": 9216,
+        "total_records": 9216,
+        "uniqueness_ratio": 1.0
+      },
+      "patient_gender": {
+        "unique_values": 3,
+        "total_records": 9216,
+        "uniqueness_ratio": 0.0003
+      },
+      "patient_race": {
+        "unique_values": 7,
+        "total_records": 9216,
+        "uniqueness_ratio": 0.0008
+      },
+      "department_referral": {
+        "unique_values": 7,
+        "total_records": 9216,
+        "uniqueness_ratio": 0.0008
+      }
+    }
+  },
+  "validity": {
+    "range_violations": {
+      "patient_age": {
+        "expected_range": "0-120",
+        "violations": 0,
+        "percentage": 0.0
+      },
+      "patient_waittime": {
+        "expected_range": "0-300",
+        "violations": 0,
+        "percentage": 0.0
+      },
+      "patient_sat_score": {
+        "expected_range": "0-10",
+        "violations": 0,
+        "percentage": 0.0
+      }
+    },
+    "value_violations": {
+      "patient_gender": {
+        "expected_values": [
+          "M",
+          "F"
+        ],
+        "violations": 24,
+        "invalid_values": [
+          "NC"
+        ]
+      },
+      "patient_admin_flag": {
+        "expected_values": [
+          "True",
+          "False",
+          true,
+          false
+        ],
+        "violations": 0,
+        "invalid_values": []
+      },
+      "Moment": {
+        "expected_values": [
+          "AM",
+          "PM"
+        ],
+        "violations": 0,
+        "invalid_values": []
+      }
+    },
+    "format_violations": {
+      "date": {
+        "violations": 0,
+        "status": "Valid"
+      }
+    }
+  },
+  "consistency": {
+    "temporal_consistency": {
+      "future_dates": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    },
+    "logical_consistency": {
+      "high_sat_high_wait": {
+        "count": 13,
+        "percentage": 0.14,
+        "note": "High satisfaction despite long wait times (may be valid)"
+      }
+    },
+    "cross_field_consistency": {
+      "pediatric_in_adult_dept": {
+        "count": 55,
+        "note": "Pediatric patients in typically adult-focused departments"
+      }
+    }
+  },
+  "accuracy": {
+    "outliers": {
+      "patient_age": {
+        "count": 0,
+        "percentage": 0.0,
+        "lower_bound": -40.0,
+        "upper_bound": 120.0,
+        "Q1": 20.0,
+        "Q3": 60.0,
+        "IQR": 40.0
+      },
+      "patient_waittime": {
+        "count": 0,
+        "percentage": 0.0,
+        "lower_bound": -14.5,
+        "upper_bound": 85.5,
+        "Q1": 23.0,
+        "Q3": 48.0,
+        "IQR": 25.0
+      },
+      "patient_sat_score": {
+        "count": 0,
+        "percentage": 0.0,
+        "lower_bound": -7.0,
+        "upper_bound": 17.0,
+        "Q1": 2.0,
+        "Q3": 8.0,
+        "IQR": 6.0
+      }
+    },
+    "statistical_summary": {
+      "patient_age": {
+        "mean": 39.86,
+        "median": 39.0,
+        "std": 22.76,
+        "min": 1.0,
+        "max": 79.0
+      },
+      "patient_waittime": {
+        "mean": 35.26,
+        "median": 35.0,
+        "std": 14.74,
+        "min": 10.0,
+        "max": 60.0
+      },
+      "patient_sat_score": {
+        "mean": 4.99,
+        "median": 5.0,
+        "std": 3.14,
+        "min": 0.0,
+        "max": 10.0
+      }
+    }
+  },
+  "overall": {
+    "quality_score": 97.56,
+    "dimension_scores": {
+      "completeness": 88.07,
+      "uniqueness": 100.0,
+      "validity": 99.73958333333333,
+      "consistency": 100.0,
+      "accuracy": 100.0
+    },
+    "total_recommendations": 1,
+    "critical_issues": 0
+  }
+}

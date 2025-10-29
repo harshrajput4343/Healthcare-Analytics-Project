@@ -1,0 +1,24 @@
+================================================================================
+DATA QUALITY VALIDATION REPORT
+================================================================================
+
+Report Generated: 2025-10-29 19:51:56
+Dataset Records: 9216
+Overall Quality Score: 97.56%
+
+DIMENSION SCORES:
+--------------------------------------------------------------------------------
+  Completeness: 88.07%
+  Uniqueness: 100.00%
+  Validity: 99.74%
+  Consistency: 100.00%
+  Accuracy: 100.00%
+
+================================================================================
+RECOMMENDATIONS (1 total)
+================================================================================
+
+1. [MEDIUM] Validity
+   Issue: 24 records in 'patient_gender' have invalid values
+   Recommendation: Standardize values in patient_gender to match expected categories
+
